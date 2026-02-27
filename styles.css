@@ -39,7 +39,9 @@ header {
 }
 
 #lang-toggle {
-  justify-content: flex-end;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   height: 30px;
   width: 50px;
   cursor: pointer;
