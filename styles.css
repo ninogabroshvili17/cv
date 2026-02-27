@@ -103,3 +103,13 @@ section li {
   margin-bottom: 6px;
   font-size: 0.95rem;
 }
+
+section li a {
+  color: #4e4376;
+}
+
+section h3 {
+  font-size: 1.1rem;
+  color: #4e4376;
+  margin-top: 16px;
+}
