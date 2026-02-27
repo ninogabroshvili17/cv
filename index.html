@@ -5,55 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV | Nino Gabroshvili</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./script.js"></script>
   </head>
   <body>
     <header>
-      <img
-        class="profile-photo"
-        src="./images/profile.jpg"
-        alt="Photo of Nino Gabroshvili"
-      />
-      <div>
-        <h1>Nino Gabroshvili</h1>
-        <p class="role">Front-End Developer</p>
+      <div class="info">
+        <img
+          class="profile-photo"
+          src="./images/profile.jpg"
+          alt="Photo of Nino Gabroshvili"
+        />
+        <div class="inside-info">
+          <h1 data-i18n="name">Nino Gabroshvili</h1>
+          <p class="role" data-i18n="role">Front-End Developer</p>
+        </div>
       </div>
+      <button id="lang-toggle" class="lang-btn">GE</button>
     </header>
     <nav>
       <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#contact-information">Contacts</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#languages">Languages</a></li>
+        <li><a data-i18n="aboutMe" href="#about-me">About Me</a></li>
+        <li>
+          <a data-i18n="contactInformation" href="#contact-information"
+            >Contact</a
+          >
+        </li>
+        <li><a data-i18n="education" href="#education">Education</a></li>
+        <li><a data-i18n="experience" href="#experience">Experience</a></li>
+        <li><a data-i18n="projects" href="#projects">Projects</a></li>
+        <li><a data-i18n="skills" href="#skills">Skills</a></li>
+        <li><a data-i18n="languages" href="#languages">Languages</a></li>
       </ul>
     </nav>
     <main>
       <section id="about-me">
-        <h2>About Me</h2>
-        <p>
-          I am a junior Front-End Developer with hands-on experience in real
-          projects and collaborative teams. I have worked on HTML, CSS, and
-          JavaScript SaaS projects, and I am currently deepening my
-          understanding of essential front-end technologies. Right now, I am
-          advancing in React and learning Next.js and TypeScript by working on
-          real, deployed projects, improving my skills every day. I continuously
-          explore and expand my knowledge in areas I'm passionate about, and I
-          love sharing what I learn with others. I am ready for new
-          opportunities where I can further develop my technical skills and
-          contribute to creating modern, real-world technologies.
+        <h2 data-i18n="aboutTitle">About Me</h2>
+        <p data-i18n="aboutText">
+          I am a 21-year-old Computer Science student and Front-End Developer
+          with experience working on real-life projects in collaborative team
+          environments. Currently, during my acceleration at Unilab, I am
+          developing projects using React, Next.js, and TypeScript and am also
+          learning SEO optimization at TBC Campus to broaden my web development
+          knowledge. Additionally, I have experience tutoring elementary school
+          students in English and Mathematics. I am committed to continuous
+          learning and eager for challenging opportunities where I can grow,
+          contribute to innovative projects, and share my knowledge.
         </p>
       </section>
       <section id="contact-information">
         <h2>Contact Information</h2>
         <ul>
           <li>
-            <strong>Phone:</strong>
+            <strong data-i18n="phone">Phone Number:</strong>
             <a href="tel:+995557152542">+995 557 152 542</a>
           </li>
           <li>
-            <strong>Email:</strong>
+            <strong data-i18n="mail">Email:</strong>
             <a href="mailto:nino.gabroshvili.4@gmail.com"
               >nino.gabroshvili.4@gmail.com</a
             >
@@ -79,40 +86,55 @@
         </ul>
       </section>
       <section id="education">
-        <h2>Education</h2>
+        <h2 data-i18n="education">Education</h2>
 
-        <h3>BSc in Computer Science</h3>
-        <p><strong>Ilia State University</strong>, Tbilisi | 2022 - present</p>
+        <h3 data-i18n="bsc">BSc in Computer Science</h3>
+        <p>
+          <strong data-i18n="uniStrong">Ilia State University,</strong>
+          <span data-i18n="uni"> Tbilisi | 2022 - present</span>
+        </p>
       </section>
       <section id="experience">
-        <h2>Experience</h2>
+        <h2 data-i18n="experience">Experience</h2>
 
-        <h3>SEO Optimization Course</h3>
-        <p><strong>TBC Campus</strong>, Tbilisi | Feb 2025 - Present</p>
+        <h3 data-i18n="seoH3">SEO Optimization Course</h3>
         <p>
+          <strong data-i18n="seoStrong">TBC Campus,</strong
+          ><span data-i18n="seoSpan">Tbilisi | Feb 2025 - Present</span>
+        </p>
+        <p data-i18n="seoP">
           Learning SEO strategies, keyword research, on-page optimization and
           modern SEO tools through daily workshops and hands-on projects.
         </p>
 
-        <h3>Front-End Acceleration Program (React)</h3>
-        <p><strong>Unilab</strong>, Tbilisi | Dec 2025 - Present</p>
+        <h3 data-i18n="reactH3">Front-End Acceleration Program (React)</h3>
         <p>
+          <strong data-i18n="reactStrong">Unilab,</strong
+          ><span data-i18n="reactSpan">Tbilisi | Dec 2025 - Present</span>
+        </p>
+        <p data-i18n="reactP">
           Developing React, Next.js and TypeScript by building real-life
           websites using Tailwind CSS. Collaborating on large codebases via
           Git/GitHub and Trello with project managers, simulating real team
           workflows.
         </p>
 
-        <h3>Front-End Acceleration Program (HTML, CSS, JavaScript)</h3>
-        <p><strong>Unilab</strong>, Tbilisi | Nov 2024 - Mar 2025</p>
+        <h3 data-i18n="jsH3">
+          Front-End Acceleration Program (HTML, CSS, JavaScript)
+        </h3>
         <p>
+          <strong data-i18n="jsStrong">Unilab,</strong>
+          <span data-i18n="jsSpan">Tbilisi | Nov 2024 - Mar 2025</span>
+        </p>
+        <p data-i18n="jsP">
           Built responsive, interactive web interfaces with HTML, CSS/SCSS and
           JavaScript, focusing on DOM manipulation and UI functionalities,
           learning best practices and developing presentation skills.
         </p>
       </section>
+
       <section id="projects">
-        <h2>Projects</h2>
+        <h2 data-i18n="projects">Projects</h2>
         <div class="projects-grid">
           <div>
             <h3>Ilia Library</h3>
@@ -124,7 +146,7 @@
                 src="./images/ilia_library.png"
                 alt="Ilia library website image"
               />
-              <p>
+              <p data-i18n="iliaP">
                 Contributed to the Ilia State University Library website during
                 Unilab's JavaScript Frontend Acceleration Program. Built and
                 styled UI components, improved responsiveness, and added
@@ -140,7 +162,7 @@
               target="_blank"
               rel="noopener noreferrer"
               ><img src="./images/qartNLP.png" alt="QartMLP website image" />
-              <p>
+              <p data-i18n="qartP">
                 Implemented the frontend for the landing page of a
                 Georgian-language natural language processing project. Focused
                 on layout, responsiveness, and UI using HTML, SCSS, and
@@ -159,7 +181,7 @@
                 src="./images/chatbot_camp.png"
                 alt="Chatbot camp website image"
               />
-              <p>
+              <p data-i18n="chatP">
                 Collaborated on a mini frontend project with a chat component.
                 My work was focused on responsiveness, logo layout adjustments,
                 and JavaScript interactions.
@@ -169,38 +191,52 @@
         </div>
       </section>
       <section id="skills">
-        <h2>Skills</h2>
+        <h2 data-i18n="skills">Skills</h2>
         <ul>
           <li>
-            <strong>Languages & Frameworks: </strong>JavaScript (ES6+),
-            TypeScript, React, Next.js
+            <strong data-i18n="skillsLang">Languages & Frameworks: </strong>
+            <span>JavaScript (ES6+), TypeScript, React, Next.js</span>
           </li>
           <li>
-            <strong>Styling & UI: </strong>HTML5, CSS3, SCSS (SASS), Tailwind
-            CSS
+            <strong data-i18n="skillsUI">Styling & UI: </strong
+            ><span>HTML5, CSS3, SCSS (SASS), Tailwind CSS</span>
           </li>
           <li>
-            <strong>Tools & Collaboration: </strong> Git, GitHub, VS Code,
-            Trello
+            <strong data-i18n="skillsTools">Tools & Collaboration: </strong>
+            <span> Git, GitHub, VS Code, Trello</span>
           </li>
           <li>
-            <strong>Web Fundamentals: </strong>Responsive design, DOM
-            manipulation and event handling, API usage (fetching and handling
-            data)
+            <strong data-i18n="skillsWeb">Web Fundamentals: </strong>
+            <span
+              >Responsive design, DOM manipulation and event handling, API usage
+              (fetching and handling data)</span
+            >
           </li>
           <li>
-            <strong>Soft Skills: </strong>Team collaboration, independent work,
-            clear and effective communication, adaptability, fast learning, time
-            management, organization, critical thinking, and analytical skills.
+            <strong data-i18n="skillsSoft">Soft Skills: </strong>
+            <span
+              >Team collaboration, independent work, clear and effective
+              communication, adaptability, fast learning, time management,
+              organization, critical thinking, and analytical skills.</span
+            >
           </li>
         </ul>
       </section>
       <section id="languages">
-        <h2>Languages</h2>
+        <h2 data-i18n="languages">Languages</h2>
         <ul>
-          <li><strong>Georgian</strong> - Native</li>
-          <li><strong>English</strong> - C1</li>
-          <li><strong>German</strong> - A2</li>
+          <li>
+            <strong data-i18n="geo">Georgian</strong
+            ><span data-i18n="geoLvl"> - Native</span>
+          </li>
+          <li>
+            <strong data-i18n="en">English</strong
+            ><span data-i18n="enLvl"> - C1</span>
+          </li>
+          <li>
+            <strong data-i18n="ger">German</strong
+            ><span data-i18n="gerLvl"> - A2</span>
+          </li>
         </ul>
       </section>
     </main>
